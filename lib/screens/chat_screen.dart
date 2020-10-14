@@ -175,6 +175,12 @@ class _ChatScreenState extends State<ChatScreen> {
             color: Theme.of(context).primaryColor,
             onPressed: () => print("Photo"),
           ),
+          IconButton(
+            icon: Icon(Icons.upload_file),
+            iconSize: 25.0,
+            color: Theme.of(context).primaryColor,
+            onPressed: () => print("File"),
+          ),
           Expanded(
             child: TextField(
               textCapitalization: TextCapitalization.sentences,
@@ -188,7 +194,7 @@ class _ChatScreenState extends State<ChatScreen> {
             icon: Icon(Icons.send),
             iconSize: 25.0,
             color: Theme.of(context).primaryColor,
-            onPressed: () => print("Photo"),
+            onPressed: () => print("Send"),
           ),
         ],
       ),
